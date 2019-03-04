@@ -1,6 +1,77 @@
-.App {
+html,
+body{
+  font-family: "Arial, sans-serif";
+  color: #666;
+  font-size: 15px;
+  line-height: 20px;
+  height: 100%;
+}
+#root {
+  /* min-height: 100%;   */
+}
+
+.grid {
+  min-height: 100%;
+  display: grid;
+  grid-template-areas: 'header header header' 'nav main aside' 'footer footer footer';
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 50px auto 100px;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  padding: 10px;
+  /* box-sizing: border-box; */
+}
+
+
+.grid-autoselect {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: auto;  
+  grid-template-areas: 'autoselect autoselect autoselect';
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  padding: 10px;
+}
+
+.autoselect{
+  grid-area: autoselect;
+}
+.empty {
+  grid-area: empty;
+}
+
+.grid-item{  
   text-align: center;
 }
+
+.App {
+  text-align: center;
+  background-color: aqua;
+}
+
+.header{ 
+  grid-area: header;  
+}
+    
+.main{
+  grid-area: main;
+  
+}
+    
+.nav{
+  grid-area: nav;
+  
+}
+    
+.aside{
+  grid-area: aside;
+  
+}
+    
+.footer{
+  grid-area: footer;  
+}  
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;

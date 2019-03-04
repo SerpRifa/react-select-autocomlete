@@ -11,7 +11,7 @@ import  * as React from 'react';
 import Select from 'react-select';
 
   const styles = createStyles({
-    root: {      
+    root: {
       flexGrow: 1,
       background: 'white',
     },      
@@ -34,18 +34,18 @@ import Select from 'react-select';
       color: '#37383d',
       alignItems: 'center',
       fontWeight: 'bold',
-      justifyContent: 'space-between',
+      justifyConten2t: 'space-between',
       opacity: 0.70,
     },
     input: {
       display: 'flex',
-      padding: 0,
+      padding: 5,
       color: 'white',
     },
   
     placeholder: {
       position: 'absolute',
-      left: 2,
+      left: 5,
       fontSize: 16,
     },
   
